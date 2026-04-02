@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora - Plantes</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/svg+xml">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header" data-header>
+        <div class="nav-wrapper">
+            <div class="container">
+                <h1 class="h1">
+                    <a href="./index.html" class="logo">Flo<span class="span">ra</span></a>
+                </h1>
+
+                <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+
+                <nav class="navbar" data-navbar>
+                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                    <ul class="navbar-list">
+                        <li><a href="dashboard.php" class="navbar-link">Accueil</a></li>
+                        <li><a href="bouquet.html" class="navbar-link">Bouquets</a></li>
+                    </ul>
+                </nav>
+
+                <div class="search-wrapper" data-search-wrapper>
+                    <button class="header-action-btn" aria-label="Logout" onclick="window.location.href='logout.php'">
+                        <img src="./images/favicon.PNG" alt="Logout Icon" width="40" height="40">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul class="grid-list">
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (1).png" width="179" height="179" loading="lazy" alt="Plante bananier">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Plante bananier</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Plante bananier', 75.00, './assets/images/p1 (1).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (2).png" width="179" height="179" loading="lazy" alt="Monstera">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Monstera</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Monstera', 75.00, './assets/images/p1 (2).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1.png" width="179" height="179" loading="lazy" alt="Cactus">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Cactus</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Cactus', 75.00, './assets/images/p1.png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (6).png" width="179" height="179" loading="lazy" alt="Potus">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Potus</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Potus', 75.00, './assets/images/p1 (6).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (5).png" width="179" height="179" loading="lazy" alt="stertzia">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>stertzia</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('stertzia', 75.00, './assets/images/p1 (5).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (4).png" width="179" height="179" loading="lazy" alt="Arbre de prunier">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Arbre de prunier</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Arbre de prunier', 75.00, './assets/images/p1 (4).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (7).png" width="179" height="179" loading="lazy" alt="Arbre de Jade">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Arbre de Jade</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Arbre de Jade', 75.00, './assets/images/p1 (7).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="./assets/images/p1 (3).png" width="179" height="179" loading="lazy" alt="Herbe de pampas">
+                        </figure>
+                        <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                        </div>
+                        <h3 class="h4 card-title"><a>Herbe de pampas</a></h3>
+                        <div class="price-wrapper">
+                            <del class="del">$85.00</del>
+                            <data class="price" value="75.00">$75.00</data>
+                        </div>
+                        <button onclick="ajouterWishlist('Herbe de pampas', 75.00, './assets/images/p1 (3).png')" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addToCartButtons = document.querySelectorAll(".btn.btn-primary");
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const card = button.closest(".product-card");
+                    const title = card.querySelector(".card-title a").textContent;
+                    const price = card.querySelector(".price").textContent;
+                    const imgSrc = card.querySelector("img").getAttribute("src");
+
+                    const product = {
+                        title: title,
+                        price: price,
+                        img: imgSrc,
+                        quantity: 1
+                    };
+
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    const existing = cart.find(item => item.title === product.title);
+                    
+                    if (existing) {
+                        existing.quantity += 1;
+                    } else {
+                        cart.push(product);
+                    }
+
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    
+                    const customAlert = document.getElementById("custom-alert");
+                    customAlert.style.display = "block";
+                    setTimeout(() => {
+                        customAlert.style.display = "none";
+                    }, 3000);
+
+                    if (typeof updateCartDisplay === "function") {
+                        updateCartDisplay();
+                    }
+                });
+            });
+        });
+
+        function ajouterWishlist(nom, prix, image) {
+            fetch('ajouter_wishlist.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    nom: nom,
+                    prix: prix,
+                    image: image
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert(data.message);
+
+                const panelList = document.querySelector('[data-side-panel="whishlist"] .panel-list');
+                if (panelList) {
+                    const li = document.createElement('li');
+                    li.className = 'panel-item';
+                    li.innerHTML = `
+                        <a href="#" class="panel-card">
+                            <figure class="item-banner">
+                                <img src="${image}" width="46" height="46" loading="lazy" alt="${nom}">
+                            </figure>
+                            <div>
+                                <p class="item-title">${nom}</p>
+                                <span class="item-value">$${prix.toFixed(2)} x1</span>
+                            </div>
+                            <button class="item-close-btn" aria-label="Remove item">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </a>
+                    `;
+                    panelList.appendChild(li);
+                }
+            })
+            .catch(err => console.error('Erreur:', err));
+        }
+    </script>
+
+    <div id="custom-alert" style="display:none; position:fixed; top:20px; right:20px; background-color:#f8d7da; color:#721c24; padding:16px; border-radius:8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index:9999;">
+        <strong>Flora :</strong> Produit ajouté au panier !
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
